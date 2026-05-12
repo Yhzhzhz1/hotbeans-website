@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now - Hot Beans Web</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container">
+    <div class="logo">🔥 Hot Beans Web</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="roles.html">Open Roles</a>
+      <a href="resources.html">Courses</a>
+      <a href="apply.html" class="btn-primary">Apply Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- APPLY SECTION -->
+<section class="apply">
+  <div class="container apply-container">
+
+    <!-- LEFT INFO -->
+    <div class="apply-info">
+      <h1>Apply to Join Us</h1>
+      <p>
+        We're looking for passionate individuals who want to help build a more
+        sustainable web. Our application process is simple and designed to give
+        you the opportunity to showcase your skills and interest.
+      </p>
+
+      <p>
+        Fill out the form with your details, select the role that best suits you,
+        and provide a short cover letter explaining your interest in sustainable
+        development. Our team will review your application and get back to you
+        if you are a good fit.
+      </p>
+    </div>
+
+    <!-- FORM -->
+    <div class="apply-form">
+      <form id="applicationForm">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="e.g. Alex Johnson" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="e.g. alex@email.com" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="e.g. 07123 456789" required>
+
+        <label>Role Applying For</label>
+        <select required>
+          <option value="">Select a role</option>
+          <option>HTML Developer</option>
+          <option>CSS Developer</option>
+          <option>JavaScript Developer</option>
+        </select>
+
+        <label>Highest Qualification</label>
+        <select required>
+          <option value="">Select qualification</option>
+          <option>GCSEs</option>
+          <option>A-Levels</option>
+          <option>Diploma</option>
+          <option>Degree</option>
+        </select>
+
+        <label>Website Development Experience</label>
+        <select required>
+          <option value="">Select experience</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+
+        <label>Cover Letter</label>
+        <textarea placeholder="Write a short cover letter explaining why you are interested in this role..." required></textarea>
+
+        <div class="checkbox">
+          <input type="checkbox" id="confirm" required>
+          <label for="confirm">
+            I confirm that I am passionate about sustainable web development practices
+            and committed to building efficient, environmentally responsible digital
+            solutions. I understand the importance of writing optimized code, reducing
+            energy consumption, and contributing to a cleaner internet.
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit Application</button>
+
+        <p id="successMessage" class="success-message"></p>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-left">
+      <h3>🔥 Hot Beans Web</h3>
+      <p>A web development agency committed to sustainability.</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
